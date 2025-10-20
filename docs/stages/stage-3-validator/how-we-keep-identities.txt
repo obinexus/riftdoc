@@ -1,0 +1,29 @@
+@startuml
+!theme plain
+skinparam backgroundColor #FEFEFE
+
+title How We Keep Identities Safe
+
+actor "Person with Puppet" as owner
+component "Their Puppet" as puppet1 #LightBlue
+component "Friend's Puppet" as puppet2 #LightGreen
+
+owner -> puppet1 : ✓ Can touch\n✓ Full control
+owner -[#red]-> puppet2 : ✗ Cannot touch\n✗ Boundary violation
+
+package "Protection System" {
+  hexagon "Rule 1" as r1 #Gold
+  note right of r1 : Each puppet belongs\nto ONE person only
+  
+  hexagon "Rule 2" as r2 #Gold
+  note right of r2 : 21 validators must\nagree (67%) before\nany identity is registered
+  
+  hexagon "Rule 3" as r3 #Gold
+  note right of r3 : All expressions are\ntime-stamped and\nprotected from tampering
+}
+
+puppet1 ..> r1 : Protected by
+puppet1 ..> r2 : Validated by
+puppet1 ..> r3 : Secured by
+
+@enduml

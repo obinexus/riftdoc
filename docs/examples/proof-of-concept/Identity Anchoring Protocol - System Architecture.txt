@@ -1,0 +1,52 @@
+@startuml
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontSize 14
+
+title Identity Anchoring Protocol - System Architecture
+
+package "Individual's World" {
+  actor "Non-verbal Person" as person
+  component "Puppet/Identity Anchor" as puppet #LightBlue
+  note right of puppet : Physical representation\nof internal identity
+}
+
+package "Support Network" {
+  actor Caregiver
+  actor Teacher
+  actor Therapist
+}
+
+package "Identity System" {
+  database "Identity Registry" as registry {
+    storage "Unique Identity Records"
+    storage "Evolution History"
+    storage "Expression Patterns"
+  }
+  
+  component "Translation Bridge" as bridge #LightGreen {
+    [Non-verbal to Verbal]
+    [Symbolic to Written]
+    [Movement to Meaning]
+  }
+  
+  component "Validation Network" as validators #LightCoral {
+    [21 Independent Validators]
+    [Consensus Protocol]
+    [Security Checks]
+  }
+}
+
+person --> puppet : Creates &\nExpresses through
+puppet --> bridge : Sends expressions
+bridge --> validators : Validates authenticity
+validators --> registry : Stores if 67% agree
+registry --> "Support Network" : Shares insights
+
+note bottom
+  The system ensures that each person's unique way
+  of communicating is recognized, protected, and
+  understood by those who support them.
+end note
+
+@enduml

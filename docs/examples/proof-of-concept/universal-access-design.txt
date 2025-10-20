@@ -1,0 +1,34 @@
+@startuml
+!theme plain
+skinparam backgroundColor #FEFEFE
+
+title Universal Access Design
+
+package "Traditional Therapy" as traditional #Pink {
+  component "Expensive" as exp
+  component "Long waiting lists" as wait
+  component "Limited availability" as limit
+  component "Requires travel" as travel
+}
+
+package "Puppet Method" as puppet #LightGreen {
+  component "Buy puppet from any shop" as shop
+  component "Start immediately" as start
+  component "Use at home" as home
+  component "Costs almost nothing" as cheap
+}
+
+actor Parent
+actor Caregiver
+actor Teacher
+
+Parent --> puppet : Can implement today
+Caregiver --> puppet : No special training needed
+Teacher --> puppet : Works in any setting
+
+note bottom
+  By removing barriers, every child gets
+  the support they need, when they need it
+end note
+
+@enduml

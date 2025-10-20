@@ -1,0 +1,45 @@
+@startuml
+!theme plain
+skinparam backgroundColor #FEFEFE
+
+title Identity Development Journey
+
+start
+
+:Child receives puppet at age 6;
+note right: Beginning of identity journey
+
+:Child designs puppet\nto look/feel like them;
+#LightBlue:Identity Anchoring Phase;
+note left
+  - Puppet becomes "them"
+  - Safe space for expression
+  - No forcing or rushing
+end note
+
+while (Child engages with puppet?) is (yes)
+  :Express feelings through puppet;
+  :Puppet interactions recorded;
+  :Patterns begin to emerge;
+  
+  if (Ready for next step?) then (yes)
+    #LightGreen:Bridge Construction Phase;
+    :Puppet meets other puppets;
+    :Communication attempts increase;
+    :May begin verbal attempts;
+  endif
+endwhile
+
+#Gold:Validation Phase;
+:Track progress;
+:Measure both internal feelings\nand external behaviors;
+
+if (Verbal communication emerges?) then (yes)
+  :Success! But not required;
+else (no)
+  :Alternative communication\nfully validated;
+endif
+
+stop
+
+@enduml
