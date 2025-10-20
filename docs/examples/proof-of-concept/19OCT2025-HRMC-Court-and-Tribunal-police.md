@@ -1,1 +1,0 @@
-Met Police: Your call reference is: CHS 33335/19Oct25. For more help, information and advice, go to 'Ask The Police' here http://bit.ly/3wCQSHD or 'Police.uk' here http://bit.ly/3nxM6tw. For crime prevention advice please go to http://bit.ly/3DlPDQx. Stay up to date with what's happening with policing in your local area - sign up to Met Engage here https://www.metengage.co.uk/

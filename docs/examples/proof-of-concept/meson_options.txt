@@ -1,2 +1,0 @@
-option('enable_tests', type : 'boolean', value : false, description : 'Enable unit tests')
-option('enable_docs', type : 'boolean', value : false, description : 'Enable documentation generation')
